@@ -52,23 +52,22 @@ switch (randomNumber) {
     alert(eightBall);
     break;
 }
-function clickbutton2() {
-  let headsTails = '';
-  const randomNum = Math.floor(Math.random());
-if (randomNum === 1) {
-  headsTails = 'heads';
-  alert(headsTails);
-} else if (randomNum === 0) {
-  headsTails = 'tails';
-  alert(headsTails);
-}
-}
+function  clickbuttonflip() {
+  let headOrTails = '';
+  const randomNumber = Math.floor(Math.random());
+  if (randomNumber === 0) {
+    headOrTails = 'Heads';
+  } else if (randomNumber === 1) {
+    headOrTails = 'Tails';
+  }
+  alert(headOrTails);
+  }
     }
   </script>
 </head>
 <h1>This is my website</h1>
 <body>
   <button type="button" onclick="clickbutton()">Magic 8 Ball</button>
-  <button type="button" onclick="clickbutton2()">flip a coin</button>
+  <button type="button" onclick="clickbuttonflip()">flip a coin</button>
 </body>
 </html>
