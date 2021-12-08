@@ -58,13 +58,17 @@ switch (randomNumber) {
     break;
   alert(eightBall);
 }
+function generator() {
+  let number = Math.floor(Math.random() * 100);;
+  alert(number++);
+}
     }
   </script>
 </head>
 <h1>This is my website</h1>
 <body>
-  <div style="width:100%; height:100%; border: 1px solid">
-  <button type="button" onclick="clickbutton()" class="button button1">Magic 8 Ball</button>
+  <button type="button" onclick="clickbutton()" class="button button1">Magic 8 Ball</button><br>
+  <button type="button" onclick="generator()" class="button button2">Random Number 1-100</button>
   </div>
 </body>
 </html>
