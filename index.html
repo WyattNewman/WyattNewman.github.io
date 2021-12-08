@@ -62,10 +62,10 @@ alert(eightBall);
 }
 function  clickbuttonflip() {
   let flip = '';
-  const randomNumber = Math.floor(Math.random() * 4);
-  if (randomNumber <= 2) {
+  const randomNumber = Math.floor(Math.random());
+  if (randomNumber === 0) {
     flip = 'Heads';
-  } else if (randomNumber >= 2) {
+  } else if (randomNumber === 1) {
     flip = 'Tails';
   }
   alert(flip);
@@ -75,7 +75,7 @@ function  clickbuttonflip() {
 </head>
 <h1>This is my website</h1>
 <body>
-  <button type="button" onclick="clickbutton()">Magic 8 Ball</button>
-  <button type="button" onclick="clickbuttonflip()">flip a coin</button>
+  <button type="button" onclick="clickbutton()" class="button button1">Magic 8 Ball</button>
+  <button type="button" onclick="clickbuttonflip()" class="button button2">flip a coin</button>
 </body>
 </html>
