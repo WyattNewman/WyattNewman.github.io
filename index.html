@@ -54,11 +54,11 @@ switch (randomNumber) {
 }
 function clickbutton2() {
   let headsTails = '';
-  const randomNum = Math.floor(Math.random() * 2);
-if (randomNum = 1) {
+  const randomNum = Math.floor(Math.random());
+if (randomNum === 1) {
   headsTails = 'heads';
   alert(headsTails);
-} else {
+} else if (randomNum === 0) {
   headsTails = 'tails';
   alert(headsTails);
 }
