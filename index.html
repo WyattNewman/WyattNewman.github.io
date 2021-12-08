@@ -42,14 +42,24 @@ switch (randomNumber) {
     break;  
   default:    
     eightBall = 'something went wrong';    
-    break;}
-alert(eightBall);
+    break;
+alert(eightBall);}
+function clickbutton2() {
+  let headsTails = '';
+  const randomNum = Math.floor(Math.random())
+if (randomNum = 1) {
+  headsTails = 'heads;'
+} else {
+  headsTails = 'tails'
+}
+alert(headsTails);
+}
     }
   </script>
 </head>
 <h1>This is my website</h1>
 <body>
   <button type="button" onclick="clickbutton()">Magic 8 Ball</button>
-  <button type="button" onclick="clickbutton2()">
+  <button type="button" onclick="clickbutton2()">flip a coin</button>
 </body>
 </html>
