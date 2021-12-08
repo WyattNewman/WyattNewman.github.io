@@ -47,10 +47,16 @@ alert(eightBall);
 function  clickbuttonflip() {
   let flip = '';
   const randomNumber = Math.floor(Math.random());
-  if (randomNumber === 0) {
-    flip = 'Heads';
-  } else if (randomNumber === 1) {
-    flip = 'Tails';
+  switch (randomNumber) {
+    case 0:
+      flip = 'Tails';
+      break;
+    case 1:
+      flip = 'Heads';
+      break;
+    default:
+      flip = 'something went wrong';
+      break;
   }
   alert(flip);
   }
