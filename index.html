@@ -3,14 +3,30 @@
 <head>
   <style>
     h1 {
-    color: red;
+      color: white;
+      font-size: 100;
+      font-family: arial;
     }
     body {
-      background-color: #6495ED;
+      background-color: black;
+    }
+    .button {
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+    }
+    .button1 {
+      background-color: lightblue;
+    }
+    .button2 {
+      backgroundcolor: lightgreen;
     }
   </style>
   <script>
-    function clickbuttonflip() {
+    function clickbutton() {
       let userQuestion = prompt('What would you like to ask : ');
 console.log(`The user asked: ${userQuestion}`);
 const randomNumber = Math.floor(Math.random() * 8);
@@ -44,19 +60,13 @@ switch (randomNumber) {
     break;
 alert(eightBall);
 }
-function  clickbutton() {
+function  clickbuttonflip() {
   let flip = '';
-  const randomNumber = Math.floor(Math.random());
-  switch (randomNumber) {
-    case 0:
-      flip = 'Tails';
-      break;
-    case 1:
-      flip = 'Heads';
-      break;
-    default:
-      flip = 'something went wrong';
-      break;
+  const randomNumber = Math.floor(Math.random() * 4);
+  if (randomNumber <= 2) {
+    flip = 'Heads';
+  } else if (randomNumber >= 2) {
+    flip = 'Tails';
   }
   alert(flip);
   }
