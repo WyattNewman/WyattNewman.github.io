@@ -18,14 +18,9 @@
       text-decoration: none;
       display: inline-block;
       font-size: 20px;
-      text-align: center;
+      text-items: center;
       font-family: arial;
-    }
-    .button1 {
-      background-color: #2F4F4F;
-    }
-    .button2 {
-      backgroundcolor: #2F4F4F;
+      background-color: slateblue;
     }
   </style>
   <script>
@@ -63,7 +58,7 @@ switch (randomNumber) {
     break;
 alert(eightBall);
 }
-function  clickbuttonrand() {
+function  randomNumber() {
   let thenum = Math.floor(Math.random() * 100;
   alert(thenum);
   }
@@ -72,7 +67,7 @@ function  clickbuttonrand() {
 </head>
 <h1>This is my website</h1>
 <body>
-  <button type="button" onclick="clickbutton()" class="button button1">Magic 8 Ball</button>
-  <button type="button" onclick="clickbuttonrand()" class="button button2">Random Number 1-100</button>
+  <button type="button" onclick="clickbutton()" class="button button1">Magic 8 Ball</button><br>
+  <button type="button" onclick="randomNumber()" class="button button2">Random Number 1-100</button>
 </body>
 </html>
