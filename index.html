@@ -3,7 +3,7 @@
 <head>
   <style>
     h1 {
-    font-color: red;
+    color: red;
     }
     body {
       background-color: #6495ED;
@@ -18,47 +18,41 @@ let eightBall = '';
 switch (randomNumber) {  
   case 0:    
     eightBall = 'It is certain';
-    alert(eightBall);
     break;  
   case 1:    
     eightBall = 'It is decidedly so';
-    alert(eightBall);
     break;  
   case 2:    
     eightBall = 'Reply hazy try again';
-    alert(eightBall);
     break;  
   case 3:    
     eightBall = 'Cannot predict now';    
     break;  
   case 4:    
     eightBall = 'Do not count on it';
-    alert(eightBall);
     break;  
   case 5:    
-    eightBall = 'My sources say no';
-    alert(eightBall);
+    eightBall = 'My sources say no';    
     break;  
   case 6:    
     eightBall = 'Outlook not so good';
-    alert(eightBall);
     break;  
   case 7:    
-    eightBall = 'Signs point to yes';  
-    alert(eightBall);
     break;  
   default:    
     eightBall = 'something went wrong';
-    alert(eightBall);
     break;
+alert(eightBall);
 }
 function  clickbuttonflip() {
+  let flip = '';
   const randomNumber = Math.floor(Math.random());
   if (randomNumber === 0) {
-    alert('Heads');
+    flip = 'Heads';
   } else if (randomNumber === 1) {
-    alert('Tails');
+    flip = 'Tails';
   }
+  alert(flip);
   }
     }
   </script>
