@@ -70,6 +70,14 @@
       let number = Math.floor(Math.random() * 100);
       alert(number + 1);
     }
+    function headsortails() {
+      const randomNumber = Math.floor(Math.random());
+      if (randomNumber === 1) {
+        alert('heads');
+      } else {
+        alert('tails');
+      }
+    }
   </script>
 </head>
 <h1>This is my website</h1>
@@ -80,7 +88,8 @@
   <button type="button" onclick="document.body.style.backgroundColor = 'lightblue';" class="button button3">blue</button>
   <button type="button" onclick="document.body.style.backgroundColor = '#FFA500';" class="button button4">orange</button>
   <button type="button" onclick="document.body.style.backgroundColor = 'tomato';" class="button button5">red</button>
-  <button type="button" onclick="randomNumber()" class="button button6">Random Number 1-100</button><br>
+  <button type="button" onclick="randomNumber()" class="button button6">Random Number 1-100</button>
+  <button type="button" oclick="headsortails()" class="button button7">Flip a coin</button><br>
     </div>
   <div class="textstuff">
   <p>click here for my github - <a href="https://github.com/WyattNewman">github.com/WyattNewman</a></p>
