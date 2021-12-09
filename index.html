@@ -6,10 +6,10 @@
       color: black;
       font-size: 150;
       font-family: arial;
-      text-align: center;
     }
     body {
       background-color: white;
+      text-align: center;
     }
     .button {
       color: white;
@@ -26,7 +26,6 @@
       font-size: 40;
       font-family: arial;
       color: black;
-      text-align: center; 
     }
   </style>
   <script>
@@ -79,13 +78,15 @@
       }
     }
     function darkmode() {
-      document.p.style.color = 'white';
-      document.h1.style.color = 'white';
       document.body.style.backgroundColor = 'black';
+      document.getElementsByClassName('textstuff').style.color = 'white';
     }
   </script>
 </head>
-<h1>This is my website</h1>
+    <div class="textstuff">
+      <h1>This is my website</h1>
+      <p>click here for my github - <a href="https://github.com/WyattNewman">github.com/WyattNewman</a></p>
+  </div>
 <body>
   <div id="buttons">
   <button type="button" onclick="clickbutton()" class="button button1">Magic 8 Ball</button>
@@ -97,8 +98,5 @@
   <button type="button" onclick="headsortails()" class="button button7">Flip a coin</button><br>
   <button type="button" onclick="darkmode()" class="button button8">dark mode</button>
     </div>
-  <div class="textstuff">
-  <p>click here for my github - <a href="https://github.com/WyattNewman">github.com/WyattNewman</a></p>
-  </div>
 </body>
 </html>
