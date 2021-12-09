@@ -30,39 +30,44 @@
     }
   </style>
   <script>
+    
     function clickbutton() {
       let userQuestion = prompt('What would you like to ask : ');
-console.log(`The user asked: ${userQuestion}`);
-const randomNumber = Math.floor(Math.random() * 8);
-let eightBall = '';
-switch (randomNumber) {  
-  case 0:    
-    eightBall = 'It is certain';
-    break;  
-  case 1:    
-    eightBall = 'It is decidedly so';
-    break;  
-  case 2:    
-    eightBall = 'Reply hazy try again';
-    break;  
-  case 3:    
-    eightBall = 'Cannot predict now';    
-    break;  
-  case 4:    
-    eightBall = 'Do not count on it';
-    break;  
-  case 5:    
-    eightBall = 'My sources say no';    
-    break;  
-  case 6:    
-    eightBall = 'Outlook not so good';
-    break;  
-  case 7:    
-    break;  
-  default:    
-    eightBall = 'something went wrong';
-};
- alert(eightBall);
+      console.log(`The user asked: ${userQuestion}`);
+      const randomNumber = Math.floor(Math.random() * 8);
+      let eightBall = '';
+      switch (randomNumber) {  
+        case 0:    
+          eightBall = 'It is certain';
+          break;  
+        case 1:    
+          eightBall = 'It is decidedly so';
+          break;  
+        case 2:    
+          eightBall = 'Reply hazy try again';
+          break;  
+        case 3:    
+          eightBall = 'Cannot predict now';    
+          break;  
+        case 4:    
+          eightBall = 'Do not count on it';
+          break;  
+        case 5:    
+          eightBall = 'My sources say no';    
+          break;  
+        case 6:    
+          eightBall = 'Outlook not so good';
+          break;  
+        case 7:   
+          eightBall = 'Signs point to yes';
+          break;  
+        default:    
+          eightBall = 'something went wrong';
+      };
+        alert(eightBall);
+    }
+    function randomNumber() {
+      alert(Math.floor(Math.random() * 100 + 1));
     }
   </script>
 </head>
@@ -73,7 +78,8 @@ switch (randomNumber) {
   <button type="button" onclick="document.body.style.backgroundColor = 'darkseagreen';" class="button button2">green</button>
   <button type="button" onclick="document.body.style.backgroundColor = 'lightblue';" class="button button3">blue</button>
   <button type="button" onclick="document.body.style.backgroundColor = '#FFA500';" class="button button4">orange</button>
-  <button type="button" onclick="document.body.style.backgroundColor = 'tomato';" class="button button5">red</button><br>
+  <button type="button" onclick="document.body.style.backgroundColor = 'tomato';" class="button button5">red</button>
+  <button type="button" onclick="randomNumber" class="button button6">Random Number 1-100</button><br>
     </div>
   <div class="textstuff">
   <p>click here for my github - <a href="https://github.com/WyattNewman">github.com/WyattNewman</a></p>
