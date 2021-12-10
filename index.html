@@ -8,7 +8,12 @@
     }
     body {
       background-color: white;
+      color: black;
       text-align: center;
+    }
+    .dark-mode {
+      background-color: black;
+      color: white;
     }
     .button {
       color: white;
@@ -74,10 +79,10 @@
       } else {
         alert('tails');
       }
-    }
+    };
     function darkmode() {
-      document.body.style.backgroundColor = 'black';
-      document.getElementsByClassName('textstuff').style.color = 'white';
+      var element = document.body;
+      element.classList.toggle("dark-mode");
     }
   </script>
 </head>
