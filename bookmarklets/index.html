@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+      body {
+        text-align: center;
+      }
+      </style>
+    </head>
+    <body>
+      <h1>Bookmarklets</h1><br>
+      <p>These are my bookmarklets drag the link into your bookmark bar to equip.</p><br>
+      <a href="javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0;">Editing pages</a><br>
+      <a href="javascript: (function() { var clickerIsMouseDown = false; var clickerCurrentMouseTarget = document.body; document.body.addEventListener('mouseup', () => { clickerIsMouseDown = false; }); document.body.addEventListener('mousedown', () => { clickerIsMouseDown = true; }); document.body.addEventListener('mousemove', (e) => { clickerCurrentMouseTarget = e.target }); setInterval(() => { if (clickerIsMouseDown) clickerCurrentMouseTarget.click(); }, 0); })();">Autoclicker</a><br>
+      <a href="javascript: var regeX = /^.*(youtu.be\/|v\/|e\/|u\/\w+\/|embed\/|v=)([^#&\?]*).*/, getYTURL = location.href, video_id, match = getYTURL.match(regeX); if (match && 11 == match[2].length) { video_id = match[2]; var url = "https://www.youtubnow.com/watch/?v=" + escape(video_id); (w = open(url, "w", "location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,width=500,height=800,modal=yes,dependent=yes")) ? setTimeout("w.focus()", 1E3): location = url } else alert(" That's Not a Valid YouTube URL, \n Need URL like this \n http://youtube.com/watch?v=KuUYePG6ygQ ");">YouTube downloader</a><br>
+    </body>
+  </html>
