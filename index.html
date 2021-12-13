@@ -76,11 +76,13 @@
     }
     function headsortails() {
       const randomNumber = Math.floor(Math.random() * 2);
+      let coinresult = '';
       if (randomNumber === 1) {
-        alert('heads');
+        coinresult = 'heads';
       } else {
-        alert('tails');
+        coinresult = 'tails';
       }
+      document.getElementById("coinflipoutput").innerHTML=coinresult
     };
     function darkmode() {
       var element = document.body;
@@ -113,7 +115,9 @@
       <b id="coinflipoutput"></b>
       <hr>
     </div>
-    <button type="button" onclick="darkmode()" class="button button8">dark mode</button>
+      <div id="darkmodestuff">
+        <button type="button" onclick="darkmode()" class="button button8">dark mode</button><br>
+      </div>
    </div>
   <hr>
   <img src="https://avatars.githubusercontent.com/u/72288493?s=400&u=299c5848bf02c68e4bcc221c59d333a30380df34&v=4" alt="my pfp">
