@@ -86,6 +86,11 @@
       var element = document.body;
       element.classList.toggle("dark-mode");
     }
+    let thenumber = 1;
+    function multiplyerthing() {
+      thenumber * 2;
+      document.getElementById("multiplyeroutput").innerHTML=thenumber
+    }
   </script>
 </head>
 <body>
@@ -112,6 +117,10 @@
     </div>
       <div id="darkmodestuff">
         <button type="button" onclick="darkmode()" class="button button8">dark mode</button><br>
+      </div>
+      <div id="multiplier">
+        <button type="button" onclick="multiplyerthing()" class="button button9">multiplier</button><br>
+        <b id="multiplyoutput"></b><br>
       </div>
    </div>
   <hr>
