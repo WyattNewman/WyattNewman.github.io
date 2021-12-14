@@ -71,7 +71,7 @@
     function randomNumber() {
       let number = Math.floor(Math.random() * 100);
       document.getElementById("randomoutput").innerHTML=number++
-    }
+    };
     function headsortails() {
       const randomNumber = Math.floor(Math.random() * 2);
       let coinresult = '';
@@ -79,18 +79,17 @@
         coinresult = 'heads';
       } else {
         coinresult = 'tails';
-      }
+      };
       document.getElementById("coinflipoutput").innerHTML=coinresult
     };
     function darkmode() {
       var element = document.body;
       element.classList.toggle("dark-mode");
-    }
-    let thenumber = 1;
+    };
     function multiplyerthing() {
-      thenumber * 2;
-      document.getElementById("multiplyeroutput").innerHTML=thenumber
-    }
+      let thenumber = alert("what number")*2;
+      document.getElementById("multiplyeroutput").innerHTML=thenumber;
+    };
   </script>
 </head>
 <body>
@@ -120,7 +119,7 @@
       </div>
       <div id="multiplier">
         <button type="button" onclick="multiplyerthing()" class="button button9">multiplier</button><br>
-        <b id="multiplyoutput"></b><br>
+        <b id="multiplyeroutput"></b><br>
       </div>
    </div>
   <hr>
