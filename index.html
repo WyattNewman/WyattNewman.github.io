@@ -86,6 +86,11 @@
       var element = document.body;
       element.classList.toggle("dark-mode");
     }
+    let number = 1;
+    function multiplyer() {
+      number = number * 2;
+      document.getElementById("multiplyoutput").innerHTML=number
+    }
   </script>
 </head>
 <body>
@@ -110,9 +115,13 @@
       <b>the result is </b>
       <b id="coinflipoutput"></b>
     </div>
-      <div id="darkmodestuff">
+    <div id="darkmodestuff">
         <button type="button" onclick="darkmode()" class="button button8">dark mode</button><br>
-      </div>
+    </div>
+    <div id="multiplything">
+        <button type="button" onclick="multiplyer()" class="button button9">multiply</button><br>
+        <b id="multiplyoutput"></b>
+    </div>
    </div>
   <hr>
   <img src="https://avatars.githubusercontent.com/u/72288493?s=400&u=299c5848bf02c68e4bcc221c59d333a30380df34&v=4" alt="my pfp">
