@@ -69,7 +69,7 @@
         document.getElementById("balloutput").innerHTML=eightBall
     };
     function randomNumber() {
-      let number = Math.floor(Math.random() * 100);
+      let number = Math.floor(Math.random() * 100000000000);
       document.getElementById("randomoutput").innerHTML=number++
     }
     function headsortails() {
@@ -101,7 +101,7 @@
       <b id="balloutput"><b><br>
      </div>
      <div id="randomnumberstuff">
-      <button type="button" onclick="randomNumber()" class="button button6">Random Number 1-100</button><br>
+      <button type="button" onclick="randomNumber()" class="button button6">Random Number 1-100,000,000,000</button><br>
       <b>Your number is: </b>
       <b id="randomoutput"></b>
     </div>
