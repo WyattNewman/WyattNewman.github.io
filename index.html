@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>This is my website 😜</title>
-  <link rel="icon" href"https://avatars.githubusercontent.com/u/72288493?s=400&u=299c5848bf02c68e4bcc221c59d333a30380df34&v=4" type="image/x-icon" />
   <style>
     h1 {
       font-size: 150;
@@ -91,6 +90,10 @@
       number = number * 2;
       document.getElementById("multiplyoutput").innerHTML=number
     }
+    function adder() {
+      number = number + 1;
+      document.getElementById("addoutput").innerHTML=number
+    } 
   </script>
 </head>
 <body>
@@ -120,8 +123,12 @@
         <b>toggles dark mode</b><br>
     </div>
     <div id="multiplything">
-        <button type="button" onclick="multiplyer()" class="button button9">multiply</button><br>
-        <b id="multiplyoutput"></b>
+        <button type="button" onclick="multiplyer()" class="button button9">square</button><br>
+        <b id="multiplyoutput">1</b>
+    <div id="addthing">
+        <button type="button" onclick="adder()" class="button button10">add</button><br>
+        <b id="addoutput">1</b>
+    </div>
     </div>
    </div>
   <hr>
