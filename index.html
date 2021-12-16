@@ -95,6 +95,10 @@
       numbery = numbery + 1;
       document.getElementById("addoutput").innerHTML=numbery
     } 
+    function subtractor() {
+      numbery = numbery - 1;
+      document.getElementById("addoutput").innerHTML=numbery
+    }
   </script>
 </head>
 <body>
@@ -127,8 +131,9 @@
         <button type="button" onclick="multiplyer()" class="button button9">square</button><br>
         <b id="multiplyoutput">1</b>
     <div id="addthing">
-        <button type="button" onclick="adder()" class="button button10">add</button><br>
-        <b id="addoutput">1</b>
+        <button type="button" onclick="adder()" class="button button10">+</button>
+        <button type="button" onclick="subtractor()" class="button button11">-</button><br>
+        <b id="addoutput">0</b>
     </div>
     </div>
    </div>
