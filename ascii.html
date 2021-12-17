@@ -1,0 +1,35 @@
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6215446206818932" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6215446206818932" data-ad-slot="9233343911"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+<br/>
+<!-- start: shared_blocks.239618716#Media.net Top of the page -->
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-107">
+</div>
+<!-- end: shared_blocks.239618716#Media.net Top of the page -->
+
+<!-- end: shared_blocks.2087549#below-h1 -->
+<table style="text-align: center; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="padding: 10px;">
+	<label for="input_mobile">Input the binary value</label><br/>
+	<textarea id="input_mobile" cols="75" rows="5" onkeypress="calculate_mobile(event.charCode);">0</textarea><br/>
+	<input id="check" type="checkbox"/>Auto format the input
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+	<label id="error" for="button_mobile" style="color:red;"></label><br/>
+	<input id="button_mobile" type="submit" value="Convert" onclick="calculate_mobile(-1)"/>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+	<label for="output_mobile">Here is your text</label><br/>
+	<textarea id="output_mobile" cols="75" rows="5">0</textarea>
+      </td>
+    </tr>
+    <script type="text/javascript">document.getElementById("check").checked=false;function calculate_mobile(code){var binary=document.getElementById("input_mobile").value;var binaryToSet=formatBinary(binary);if(code!=-1)binary+=String.fromCharCode(code);binary=formatBinary(binary);var octets=binary.split(' ');var text=[];for(i=0;i<octets.length;++i){if(octets[i].length>0){var currentCode=binaryToDecimal(octets[i]);var currentSymbol=String.fromCharCode(currentCode);text.push(currentSymbol);}}document.getElementById("output_mobile").value=text.join("");if(document.getElementById("check").checked==true)document.getElementById("input_mobile").value=binaryToSet;}function formatBinary(binary){var format=[];var bits=0;var correctInput=true;for(i=0;i<binary.length;++i){var symbol=binary.charAt(i);if(symbol=='0'||symbol=='1'){++bits;if(bits==8)bits=0;if(bits==1&&i>0){format.push(" ");}format.push(symbol);}else if(symbol!=" "){correctInput=false;}}return format.join("");}function binaryToDecimal(binary){var decimal=0;if(binary.length>0){var weight=1;for(var i=binary.length-1;i>=0;--i){if(binary.charAt(i)=='1')decimal+=weight;weight*=2;}}return decimal;}</script>
+  </tbody>
+</table>
