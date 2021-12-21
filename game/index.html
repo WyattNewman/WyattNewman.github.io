@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        font-family: arial;
+      }
+    </style>
+    <script>
+      let number = 0;
+      function button() {
+        number = number + 1;
+        document.getElementById("output").innerHTML=number
+        if (number >= 100) {
+          document.getElementById("win").innerHTML='You Win!'
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Play the game 😜</h1>
+    <button onclick="button()">click<button><br>
+    <b>score: </b>
+    <b id="output"></b><br>
+    <b id="win"></b><br>
+    <a href="https://wyattnewman.github.io/">\<-- back to main page<a>
+  </body>
+</html>
