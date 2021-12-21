@@ -9,23 +9,28 @@
     </style>
     <script>
       let number = 0;
+      let adding = 1;
       function button() {
-        number = number + 1;
+        number = number + adding;
         document.getElementById("output").innerHTML=number
+      }
+      function upgrades() {
         if (number >= 100) {
-          document.getElementById("win").innerHTML='You Win!'
+          adding = adding * 2;
+          number = number - 100;
         }
       }
     </script>
   </head>
   <body>
-    <h1>Play the game 😜</h1>
+    <h1>button billions 😜</h1>
     <div id="stuff">
-      <button onclick="button()">click<button><br>
+      <button onclick="upgrades()">double your clicks for 100</button>
+      <button onclick="button()">click</button><br>
       <b>score: </b>
       <b id="output"></b><br>
       <b id="win"></b><br>
     </div>
-    <a href="https://wyattnewman.github.io/"><-- back to main page<a>
+    <a href="https://wyattnewman.github.io/"><-- back to main page</a>
   </body>
 </html>
