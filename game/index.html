@@ -8,29 +8,25 @@
       }
     </style>
     <script>
-      let number = 0;
-      let adding = 1;
-      function button() {
-        number = number + adding;
-        document.getElementById("output").innerHTML=number
+      function door1() {
+        document.getElementById("outputstuff").innerHTML='L Bozo you fell into a pit of snakes and died 💀'
       }
-      function upgrades() {
-        if (number >= 100) {
-          adding = adding * 2;
-          number = number - 100;
-        }
+      function door2() {
+        document.getElementById("outputstuff").innerHTML='L Bozo you walked into a room full of clowns that thought you were cosplaying them so they threw you into a void and you died 💀'
+      }
+      function door3() {
+        document.getElementById("outputstuff").innerHTML='You Win VICTORY ROYAL 😜'
       }
     </script>
   </head>
   <body>
-    <h1>button billions 😜</h1>
-    <div id="stuff">
-      <button onclick="upgrades()">double your clicks for 100</button>
-      <button onclick="button()">click</button><br>
-      <b>score: </b>
-      <b id="output"></b><br>
-      <b id="win"></b><br>
+    <h1>Choose a door to escape 😱</h1>
+    <p>Choose the right door to survive but beware your in for a scare if you choose the wrong one</p><br>
+    <div id="doors">
+      <button onclick="door1()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
+      <button onlcick="door2()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
+      <button onlcick="door3()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
     </div>
-    <a href="https://wyattnewman.github.io/"><-- back to main page</a>
+    <p id="outputstuff"></p>
   </body>
 </html>
