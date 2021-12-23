@@ -17,28 +17,33 @@
 		<script>
 			var dead = false;
 			function door1() {
-				document.getElementById("outputstuff1").innerHTML='L Bozo you fell into a pit of snakes and died 💀';
-				dead = false;
+				document.getElementById("outputstuff").innerHTML='L Bozo you fell into a pit of snakes and died 💀';
+				dead = true;
+				document.getElementById("doors")="none"
+				document.getElementById("dead").innerHTML='You Died'
 			};
 			function door2() {
-				document.getElementById("outputstuff2").innerHTML='L Bozo you walked into a room full of clowns that thought you were cosplaying them so they threw you into a void and you died 💀';
- 				dead = false;
+				document.getElementById("outputstuff").innerHTML='L Bozo you walked into a room full of clowns that thought you were cosplaying them so they threw you into a void and you died 💀';
+ 				dead = true;
+				document.getElementById("doors")="none"
+				document.getElementById("dead").innerHTML='You Died'
 			};
 			function door3() {
-				document.getElementById("outputstuff3").innerHTML='You Win VICTORY ROYAL 😜';
+				document.getElementById("outputstuff").innerHTML='You Win VICTORY ROYAL 😜';
+				document.getElementById("doors")="none"
+				document.getElementById("dead").innerHTML='You Win'
 			};
 		</script>
 	</head>
 	<body>
 		<h1>Choose a door to escape 😱</h1>
 		 <p>Choose the right door to survive but beware your in for a scare if you choose the wrong one</p><br>
+		<h1 id="dead"></h1>
 		<div id="doors">
 			<button onclick="door1()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
 			<button onclick="door2()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
 			<button onclick="door3()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
 		</div>
-		<p id="outputstuff1"></p><br>
-		<p id="outputstuff2"></p><br>
-		<p id="outputstuff3"></p>
+		<p id="outputstuff"></p><br>
 	</body>
 </html>
