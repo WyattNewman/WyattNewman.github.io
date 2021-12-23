@@ -1,37 +1,44 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {
-        text-align: center;
-        font-family: arial;
-      }
-    </style>
-    <script>
-      let dead = false;
-      function door1() {
-        document.getElementById("outputstuff1").innerHTML='L Bozo you fell into a pit of snakes and died 💀'
-        dead = false;
-      };
-      function door2() {
-        document.getElementById("outputstuff2").innerHTML='L Bozo you walked into a room full of clowns that thought you were cosplaying them so they threw you into a void and you died 💀'
-        dead = false;
-      };
-      function door3() {
-        document.getElementById("outputstuff3").innerHTML='You Win VICTORY ROYAL 😜'
-      };
-    </script>
-  </head>
-  <body>
-    <h1>Choose a door to escape 😱</h1>
-    <p>Choose the right door to survive but beware your in for a scare if you choose the wrong one</p><br>
-    <div id="doors">
-      <button onclick="door1()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
-      <button onlcick="door2()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
-      <button onlcick="door3()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
-    </div>
-    <p id="outputstuff1"></p>
-    <p id="outputstuff2"></p>
-    <p id="outputstuff3"></p>
-  </body>
+	<head>
+		<style>
+			body {
+				text-align: center;
+				font-family: arial;
+			}
+			button {
+				transition-duration: 0.4s;
+			}
+			button:hover {
+				transform: translate(0px,-10px);
+			}
+		</style>
+		<script>
+			var dead = false;
+			function door1() {
+				document.getElementById("outputstuff1").innerHTML='L Bozo you fell into a pit of snakes and died 💀';
+				dead = false;
+			};
+			function door2() {
+				document.getElementById("outputstuff2").innerHTML='L Bozo you walked into a room full of clowns that thought you were cosplaying them so they threw you into a void and you died 💀';
+ 				dead = false;
+			};
+			function door3() {
+				document.getElementById("outputstuff3").innerHTML='You Win VICTORY ROYAL 😜';
+			};
+		</script>
+	</head>
+	<body>
+		<h1>Choose a door to escape 😱</h1>
+		 <p>Choose the right door to survive but beware your in for a scare if you choose the wrong one</p><br>
+		<div id="doors">
+			<button onclick="door1()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
+			<button onclick="door2()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
+			<button onclick="door3()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8hAPPlDierFuKT_vbePGmVuX_b8LQ3SQ_Q:https://banner2.cleanpng.com/20180526/xrc/kisspng-fairy-door-garden-gnome-5b099fe031b877.1346905515273574082037.jpg&usqp=CAU" /></button>
+		</div>
+		<p id="outputstuff1"></p><br>
+		<p id="outputstuff2"></p><br>
+		<p id="outputstuff3"></p>
+	</body>
 </html>
