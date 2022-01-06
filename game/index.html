@@ -8,17 +8,27 @@
 			}
 		</style>
 		<script>
+			let num = 1;
 			function hi() {
-				document.getElementById("onhi").innerHTML="hi"
+				let i = 0;
+				while (i < 10) {
+					task(i);
+					i++;
+				}
+                        	function task(i) {
+					setTimeout(function() {
+						document.getElementById("onhi").innerHTML=num++
+					}, 2000 * i);
+				}
 			}
 		</script>
 	</head>
 	<body>	
 		<div id="first">
-			<h1>I edit this page like twice a day</h1><br><hr>
+			<h1>I edit this page like twice a day</h1><br>
 			<p>this aint no game i do random stuff here so don't expect stuff to stay here for long. If you wanna keep whats on here<br>
 		   	just go to the page source and copy the code and copy it to an html downloader, there is one on my friends website find<br>
-		   	the link on my <a href="https://wyattnewman.github.io/">homepage</a>. Give me suggestions or questions at my <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6mMT-IJV-QWltW0E6J8-vy6EUMduuMOKgenm9zUfFCvr47g/viewform?usp=sf_link">google form</a></p>
+		   	the link on my <a href="https://wyattnewman.github.io/">homepage</a>. Give me suggestions or questions at my <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6mMT-IJV-QWltW0E6J8-vy6EUMduuMOKgenm9zUfFCvr47g/viewform?usp=sf_link">google form</a></p><hr>
 	        </div>
 		<button onclick="hi()">hi</button>
 		<b id="onhi"></b>
