@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,13 +9,20 @@
 			}
 		</style>
 		<script>
+			var number = 0;
+			var counterActive = false;
+			var loop = setInterval(function(){
+				if (counterActive) {
+					number++;
+					document.getElementById("onhi").innerHTML = number;
+				};
+			}, 10);
 			function hi() {
-                           var number = 0;
-                           var interval = setInterval(function(){number++;document.getElementById("onhi").innerHTML=number},1)
-                        }
-                        function pause() {
-                           clearInterval(interval);
-                        }
+				counterActive = true
+			};
+			function pause() {
+				counterActive = false;
+			};
 		</script>
 	</head>
 	<body>	
