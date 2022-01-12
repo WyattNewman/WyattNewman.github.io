@@ -41,6 +41,8 @@
       <a href="javascript: (function() { function toArray(c) { var a, k; a = new Array; for (k = 0; k < c.length; ++k) a[k] = c[k]; return a; } var images, img, altText; images = toArray(document.images); for (var i = 0; i < images.length; ++i) { img = images[i]; altText = document.createTextNode(img.alt); img.parentNode.replaceChild(altText, img) } })();">image remover<a><br>
       <a href="javascript:(()=>{var askedCommand = prompt("what command");if (askedCommand !== null) {location="javascript: (() => {"+askedCommand+"})();"};})();">run javascript<a><br>
       <a href="javascript:(function(){let celcius = prompt('What is the tempurature in celcius?%27);let farenheit = Math.floor(celcius * 9/5) + 32;alert(%27the tempurature is: %27 + farenheit);}())">celcius to farenheit<a><br>
+      <a href="javascript:(function() {let userQuestion = prompt('What would you like to ask : ');console.log(`The user asked: ${userQuestion}`);const randomNumber = Math.floor(Math.random() * 8);let eightBall = '';switch (randomNumber) {  case 0:    eightBall = 'It is certain';    break;  case 1:    eightBall = 'It is decidedly so';    break;  case 2:    eightBall = 'Reply hazy try again';    break;  case 3:    eightBall = 'Cannot predict now';    break;  case 4:    eightBall = 'Do not count on it';    break;  case 5:    eightBall = 'My sources say no';    break;  case 6:    eightBall = 'Outlook not so good';    break;  case 7:    eightBall = 'Signs point to yes';    break;  default:    eightBall = 'something went wrong';    break;}alert(eightBall);})()">magic 8 ball</a><br>
+      <!-- <a href=""></a><br> -->
      <hr>
      <a href="https://wyattnewman.github.io/">back to main page</a><br>
      <div id="buttons">
