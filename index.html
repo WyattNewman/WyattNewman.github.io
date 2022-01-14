@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>This is my website 😜</title>
   <style>
+    * {
+        font-family: arial;
+    }
     h1 {
       font-size: 150;
-      font-family: arial;
     }
     body {
       background-color: white;
@@ -16,7 +19,7 @@
       background-color: black;
       color: white;
     }
-    .button {
+    button {
       color: white;
       padding: 15px 32px;
       text-align: center;
@@ -24,12 +27,19 @@
       display: inline-block;
       font-size: 20px;
       text-items: center;
-      font-family: arial;
+      background-color: mediumturquoise;
+      border: 5px outset mediumturquoise;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: lightslategray;	
+    }
+    button:active {
+      border-style: inset;
       background-color: darkcyan;
     }
     p {
       font-size: 40;
-      font-family: arial;
     }
   </style>
   <script>
@@ -109,26 +119,26 @@
   </div>
   <div id="buttons">
     <div id="ball">
-      <button type="button" onclick="clickbutton()" class="button button1">Magic 8 Ball</button><br>
+      <button onclick="clickbutton()">Magic 8 Ball</button><br>
       <b>The magic 8 ball says: </b>
       <b id="balloutput"><b><br>
      </div>
      <div id="randomnumberstuff">
-      <button type="button" onclick="randomNumber()" class="button button6">Random Number 1-100,000,000,000</button><br>
+      <button onclick="randomNumber()">Random Number 1-100,000,000,000</button><br>
       <b>Your number is: </b>
       <b id="randomoutput"></b>
     </div>
     <div id="flipcoin">
-      <button type="button" onclick="headsortails()" class="button button7">Flip a coin</button><br>
+      <button onclick="headsortails()">Flip a coin</button><br>
       <b>the result is </b>
       <b id="coinflipoutput"></b>
     </div>
     <div id="darkmodestuff">
-        <button type="button" onclick="darkmode()" class="button button8">dark mode</button><br>
+        <button onclick="darkmode()">dark mode</button><br>
         <b>toggles dark mode</b><br>
     </div>
     <div id="multiplything">
-        <button type="button" onclick="multiplyer()" class="button button9">square</button><br>
+        <button onclick="multiplyer()">square</button><br>
         <b id="multiplyoutput">1</b>
     <div id="addthing">
         <button type="button" onclick="adder()" class="button button10">+</button>
