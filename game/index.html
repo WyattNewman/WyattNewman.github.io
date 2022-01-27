@@ -17,8 +17,18 @@
 			}
 		</style>
 		<script>
-			var Timeout;
+			var Interval;
+			var i = 30;
 			function start() {
+				interval = setInterval(function(){
+					stuff();
+						document.getElementById("timer").innerHTML=i
+					i--;
+					if (i <= 0) {						
+							clearInterval(interval);
+						};
+					}, 1000);
+				}, 1000);
 				setTimeout(function(){
 					document.getElementById("illusion").style.display='none';
 					document.getElementById("scaryimage").style.display='block';
@@ -39,6 +49,7 @@
 			<div id="ill">
 				<img id="illusion" src="https://imgk.timesnownews.com/media/red_dot_image.jpg">
 			</div>
+			<b id="timer">30</b>
 			<div id="scare">
 				<img id="scaryimage" src="https://lh3.googleusercontent.com/UOD6C4Cqkd8splsLLojAZboCidCSoSvZePvJNVAT8jTn5-ILHKKcrbwObyYkTVb5Pg=h200">
 		        </div>
