@@ -6,34 +6,27 @@
 				text-align: center;
 				font-family: arial;
 			}
-			#illusion {
-				background-image: url{https://imgk.timesnownews.com/media/red_dot_image.jpg};
-			}
-			#scaryimage {
-				display: none;
-				width: 100%;
+			#image {
+				background-image: url("https://imgk.timesnownews.com/media/red_dot_image.jpg");
+				width: 60vw;
 				height: 100vh;
-				background-image: url{https://lh3.googleusercontent.com/UOD6C4Cqkd8splsLLojAZboCidCSoSvZePvJNVAT8jTn5-ILHKKcrbwObyYkTVb5Pg=h200};
+				background-size: 100% 100%;
 			}
 		</style>
 		<script>
-			var Interval;
+			var interval;
 			var i = 30;
 			function start() {
+				document.getElementById("thebutton").disabled = true;
 				interval = setInterval(function(){
-					stuff();
-						document.getElementById("timer").innerHTML=i
+					document.getElementById("timer").innerHTML = i-1;
 					i--;
 					if (i <= 0) {						
-							clearInterval(interval);
-						};
-					}, 1000);
+						clearInterval(interval);
+						document.getElementById("image").style.backgroundImage='url("https://lh3.googleusercontent.com/UOD6C4Cqkd8splsLLojAZboCidCSoSvZePvJNVAT8jTn5-ILHKKcrbwObyYkTVb5Pg=h200")';
+					};
 				}, 1000);
-				setTimeout(function(){
-					document.getElementById("illusion").style.display='none';
-					document.getElementById("scaryimage").style.display='block';
-				}, 30000)
-			}
+			};
 		</script>
 	</head>
 	<body>	
@@ -45,14 +38,9 @@
 	        </div>
 		<div id="scary">
 			<p>stare at the image for 30 secs</p>
-			<button onclick="start()">click to start</button>
-			<div id="ill">
-				<img id="illusion" src="https://imgk.timesnownews.com/media/red_dot_image.jpg">
-			</div>
+			<button onclick="start();" id="thebutton">click to start</button>
+			<div id="image"></div>
 			<b id="timer">30</b>
-			<div id="scare">
-				<img id="scaryimage" src="https://lh3.googleusercontent.com/UOD6C4Cqkd8splsLLojAZboCidCSoSvZePvJNVAT8jTn5-ILHKKcrbwObyYkTVb5Pg=h200">
-		        </div>
 		</div>
 	</body>
 </html>
